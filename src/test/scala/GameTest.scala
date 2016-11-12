@@ -17,6 +17,10 @@ class GameSuite extends FunSuite {
     assert(Game.move("rock","scissor") == "win")
     assert(Game.move("scissor","rock") == "lose")
   }
+  test("Scissor Beats Paper") {
+    assert(Game.move("scissor","paper") == "win")
+    assert(Game.move("paper","scissor") == "lose")
+  }
 
 
 

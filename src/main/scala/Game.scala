@@ -8,6 +8,9 @@ object Game {
 
     case ("rock", "scissor") =>  "win"
     case ("scissor", "rock") =>  "lose"
+
+    case ("scissor", "paper") =>  "win"
+    case ("paper", "scissor") =>  "lose"
   }
 
 

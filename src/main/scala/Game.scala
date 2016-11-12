@@ -11,7 +11,10 @@ object Game {
 
     case ("scissor", "paper") =>  "win"
     case ("paper", "scissor") =>  "lose"
+
+    case (left,right) if(left eq right) =>  "draw"
   }
+
 
 
 

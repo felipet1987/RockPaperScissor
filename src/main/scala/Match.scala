@@ -1,8 +1,7 @@
 package cl.talavera.rockPaperScissor
 
-object Match extends App {
-
+object HelloWorld {
+  def main(args: Array[String]) {
+    println("Hello, world!")
+  }
 }
-
-
-

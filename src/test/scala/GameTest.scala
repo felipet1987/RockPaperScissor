@@ -7,23 +7,25 @@ class GameSuite extends FunSuite {
 
 
   test("Paper Beats Rock") {
-    assert(Game.move("paper","rock") == "win")
-    assert(Game.move("rock","paper") == "lose")
+    assert(Game.evaluate("paper","rock") == "win")
+    assert(Game.evaluate("rock","paper") == "lose")
   }
 
   test("Rock Beats Scissor") {
-    assert(Game.move("rock","scissor") == "win")
-    assert(Game.move("scissor","rock") == "lose")
+    assert(Game.evaluate("rock","scissor") == "win")
+    assert(Game.evaluate("scissor","rock") == "lose")
   }
   test("Scissor Beats Paper") {
-    assert(Game.move("scissor","paper") == "win")
-    assert(Game.move("paper","scissor") == "lose")
+    assert(Game.evaluate("scissor","paper") == "win")
+    assert(Game.evaluate("paper","scissor") == "lose")
   }
   test("Same move is draw") {
-    assert(Game.move("scissor","scissor") == "draw")
-    assert(Game.move("paper","paper") == "draw")
-    assert(Game.move("rock","rock") == "draw")
+    assert(Game.evaluate("scissor","scissor") == "draw")
+    assert(Game.evaluate("paper","paper") == "draw")
+    assert(Game.evaluate("rock","rock") == "draw")
   }
+
+
 
 }
 

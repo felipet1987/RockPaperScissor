@@ -2,7 +2,8 @@ package cl.talavera.rockPaperScissor
 
 object Game {
 
-  def move(left: String, right: String): String = (left,right) match {
+
+  def evaluate(left: String, right: String): String = (left,right) match {
     case ("paper", "rock") =>  "win"
     case ("rock", "paper") =>  "lose"
 
@@ -12,7 +13,7 @@ object Game {
     case ("scissor", "paper") =>  "win"
     case ("paper", "scissor") =>  "lose"
 
-    case (left,right) if(left eq right) =>  "draw"
+    case (l,r) if(l eq r) =>  "draw"
   }
 
 
